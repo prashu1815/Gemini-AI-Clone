@@ -1,0 +1,88 @@
+/* Sidebar container styles */
+.sidebar {
+    min-height: 100vh; /* Ensure the sidebar takes up the full vertical height */
+    display: inline-flex; /* Use inline-flex to align child elements horizontally */
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: space-between; /* Space out child elements from top to bottom */
+    background-color: #f0f4f9; /* Set background color for the sidebar */
+    padding: 25px 15px; /* Add padding inside the sidebar */
+    width: 70px;  /* Width when collapsed */
+    transition: width 0.2s ease-in-out;  /* Smooth transition when the sidebar width changes */
+}
+
+/* Sidebar image styles */
+.sidebar img {
+    width: 20px; /* Set a fixed width for images inside the sidebar */
+}
+
+/* Menu item style */
+.sidebar .menu {
+    display: block; /* Make the menu an individual block element */
+    margin-left: 10px; /* Add left margin for positioning */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* New chat button styles */
+.sidebar .new-chat {
+    margin-top: 50px; /* Add margin to the top */
+    display: inline-flex; /* Align items horizontally in the button */
+    align-items: center; /* Vertically center align the items */
+    gap: 10px; /* Add space between the icon and text */
+    padding: 10px 15px; /* Padding around the button */
+    background-color: #e6eaf1; /* Set background color */
+    border-radius: 50px; /* Make the button rounded */
+    font-size: 14px; /* Set font size */
+    color: grey; /* Set text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Recent chats section */
+.sidebar .recent {
+    display: flex; /* Flex container to align the items */
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Title of the recent chats section */
+.sidebar .recent-title {
+    margin-top: 30px; /* Add space at the top */
+    margin-bottom: 20px; /* Add space at the bottom */
+}
+
+/* Recent chat entry style */
+.sidebar .recent-entry {
+    display: flex; /* Flex container for individual chat entries */
+    align-items: start; /* Align items at the top */
+    gap: 10px; /* Space between the icon and text */
+    padding: 10px; /* Padding inside the entry */
+    padding-right: 40px; /* Add extra padding to the right */
+    border-radius: 50px; /* Rounded corners */
+    color: #282828; /* Set text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Hover effect on recent chat entry */
+.sidebar .recent-entry:hover {
+    background-color: #e2e6eb;  /* Change background on hover */
+}
+
+/* Bottom section of the sidebar */
+.sidebar .bottom {
+    display: flex; /* Flex container to align items vertically */
+    flex-direction: column; /* Stack bottom items vertically */
+}
+
+/* Individual bottom item styles */
+.sidebar .bottom-item {
+    padding-right: 10px; /* Add padding to the right */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Expanded sidebar state */
+.sidebar.extended {
+    width: 250px;  /* Width when expanded */
+}
+
+/* Sidebar transition effect */
+.sidebar {
+    transition: width 0.2s ease-in-out;  /* Smooth transition when the sidebar width changes */
+}
